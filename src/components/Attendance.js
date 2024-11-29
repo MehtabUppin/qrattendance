@@ -48,7 +48,7 @@ const Attendance = () => {
         console.log('Payload:', payload);
         try {
             const response = await axios.post(
-                'http://localhost:8080/api/attendance/add',
+                'https://qrcode-vrh2.onrender.com/api/attendance/add',
                 payload,
                 {
                     headers: {
