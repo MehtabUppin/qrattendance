@@ -34,7 +34,7 @@ const QRCodeScanner = () => {
                 const instituteLongitude = 77.5963159;
 
                 const distance = calculateDistance(latitude, longitude, instituteLatitude, instituteLongitude);
-                if (distance >= 50) {
+                if (distance <= 50) {
                     navigate('/attendance');
                 } else {
                     alert('You must be within a 50-meter radius of the institute.');
