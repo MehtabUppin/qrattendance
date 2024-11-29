@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:8080/api', // Your backend API base URL
+    baseURL: 'https://qrcode-vrh2.onrender.com/api', // Your backend API base URL
 });
 
 export default api;
