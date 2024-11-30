@@ -27,7 +27,9 @@ const Login = () => {
     const handleLogin = async (e) => {
         e.preventDefault();
         try {
+            console.log("Inside the try block");
             const response = await axios.post('https://qrcode-vrh2.onrender.com/api/login', { email, password });
+            console.log("After the axios");
             const data = response.data;
 
             // Save token, user ID, and role to local storage
